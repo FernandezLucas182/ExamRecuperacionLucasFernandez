@@ -33,7 +33,7 @@ public class ConversorViewModel extends ViewModel {
 
     public LiveData<String> getMensajeToast() {
         if (mensajeToast == null) {
-
+            limpiarCampoEuros.setValue(null);
             mensajeToast = new MutableLiveData<>("");
         }
         return mensajeToast;
