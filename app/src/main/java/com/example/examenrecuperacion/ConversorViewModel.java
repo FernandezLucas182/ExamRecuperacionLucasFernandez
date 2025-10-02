@@ -51,6 +51,18 @@ public class ConversorViewModel extends ViewModel {
 
         getMensajeToast();
         mensajeToast.setValue("");
+
+
+        if (esDolarAEuro) {
+
+            limpiarCampoEuros.setValue(null);
+            solicitarFocoDolares.setValue(null);
+        } else {
+
+            limpiarCampoDolares.setValue(null);
+            solicitarFocoEuros.setValue(null);
+        }
+
     }
 
     public void convertir(String valorDolar, String valorEuro) {
